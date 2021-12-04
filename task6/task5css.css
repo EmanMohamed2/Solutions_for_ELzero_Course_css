@@ -1,0 +1,40 @@
+.q1{
+    border: 2px solid rgb(0, 81, 255);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+}
+p{
+border: inherit;
+padding: inherit;
+margin: inherit;
+background-color: rgb(192, 176, 176);
+}
+.q2{
+    text-transform: capitalize;
+}
+.q21{
+    font-family: 'Open Sans';
+    font-weight: 300px;
+    
+}
+.q22{
+   
+    font-family: 'Cairo';
+    font-weight: 700px;
+}
+.q23{
+   
+   font-family: 'Jomhuria';
+    font-weight: 400px;
+}
+.q31{
+font-size:2.5rem;
+}
+.q32{
+font-size:2rem;
+}
+.q33{
+font-size:1.5rem;
+}

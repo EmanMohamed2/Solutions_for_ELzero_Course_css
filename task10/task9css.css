@@ -1,0 +1,151 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    box-shadow:-9px -13px 0px 0px red, 9px 16px 0px 0px blue;
+    border: 2px solid black;
+    padding: 10px;
+    float: left;
+    margin: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+.one::after{
+    content: "1";
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    position: absolute;
+     top: 20px;
+    left: 80px;  
+}
+.two::after{
+    content: "2";
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+     line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 240px;  
+}
+.three::after{
+    content: "3";
+    font-weight: bold;
+     width: 20px;
+    height: 20px;
+     line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 400px;  
+}
+.clear{
+    clear: both;
+}
+.div2{
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 10px 40px;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 10px 40px;
+    background-color: rgb(187, 238, 223);
+    box-shadow: 0px 0px 20px 4px rgb(33 63 55) inset;
+    padding: 30px;
+    margin: auto;
+}
+.parent{
+    background-color: white;
+    border: 1px solid black;
+    width: 600px ;
+    height: 400px;
+    margin: 20px auto;
+}
+.child{
+    background-color: rgb(197 194 194 / 38%);
+    margin: 10px;
+    width:250px ;
+    height: 380px;
+    float: left;
+}
+.childxx{
+    background-color: rgb(233, 230, 230);
+    margin: 10px;
+    width:250px ;
+    height: 380px;
+    float: right;
+}
+
+.child1{
+    background-color: rgb(20 174 233);
+    margin:25px 15px;
+    padding:20px;
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    
+}
+.child2{
+   background-color: rgb(197 193 193 / 98%); 
+    margin: 40px 15px;
+    padding:20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    line-height: 180px;
+    text-align: center;
+    color: black;
+    font-size: larger;
+    font-weight:bolder;
+}
+.child::after{
+    content: "";
+    background-color:rgb(20 174 233);
+    width: 3px;
+    height: 170px;
+    position: absolute;
+    left:643px;
+    top:362px;
+}
+.childxx::before{
+    content: "";
+    background-color:rgb(20 174 233);
+    width: 3px;
+    height: 170px;
+    position: absolute;
+    left:643px;
+    top:572px;
+}
+.child::before{
+    content: "Or";
+    background-color:rgb(20 174 233);
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    font-size:16px;
+    padding: 5px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left:620px;
+    top:530px;
+}

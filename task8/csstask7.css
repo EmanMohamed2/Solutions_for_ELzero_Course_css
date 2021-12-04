@@ -1,0 +1,157 @@
+.div1{
+    position:relative;
+    background-color: cadetblue;
+    height: 200px;
+    width: 200px;
+}
+.red,.green,.blue,.black{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.green{
+    background-color: green;
+    top: 30px;
+    left: 40px;
+    z-index: 90;
+
+     
+}
+.red{
+    background-color: red;
+    top: 40px;
+    left: 50px;
+    z-index: 100;
+}
+.blue{
+     background-color: blue;
+     top: 20px;
+     left: 30px;
+    z-index: 80;
+}
+.black{
+    background-color: black;
+    top: 30px;
+    left: 30px;
+    z-index: 70;
+}
+.div2{
+    width: 400px;
+    background-color: rgb(165, 161, 160);
+    margin: auto;
+    border-width: 5px ;
+    border-style:  solid ;
+    border-color:  red blue;
+    padding: 20px;
+    height: 100px;
+    position: relative;
+    
+}
+.top-left,.top-right,.bottom-left,.bottom-right{
+    width: 35px;
+    height: 25px;
+    padding: 2px;
+    position: absolute;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+.top-left{
+  left:-20.5px;
+  top:-14.5px;
+  border-right:2px solid red
+}
+.top-right{
+  right:-20.5px;
+  top: -14.5px;
+  border-left:2px solid red
+  
+}
+.bottom-left{
+    left:-20.5px;
+    bottom:-14.5px;
+    border-right:2px solid red
+}
+.bottom-right{
+   right:-20.5px;
+   bottom: -14.5px;
+   border-left:2px solid red
+}
+hr{
+    margin: 50px;
+}
+.parent{
+    width: 400px;
+   
+}
+.child{
+    list-style-type: none ;
+    background-color: rgb(221, 160, 221);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+ol li{
+    list-style-position: outside;
+    background-color: white;
+    margin-bottom: 10px;
+    width:340px
+}
+.child-ol1{
+list-style-type:decimal;
+}
+.child-ol2{
+    list-style-type:lower-roman;
+}
+.rr{
+    padding-inline-start: 5px;
+    padding:5px ;
+}
+.child-li2{
+    list-style-type:circle;
+    list-style-position: inside;
+    width: 370px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: white;
+}
+table{
+    margin: auto;
+    width:700px;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-spacing: 0;
+}
+table td{
+     padding: 15px;
+     background-color: #EEE;
+     border: 1px solid #CCC;
+}
+table th{
+    padding: 15px;
+    background-color: rgb(25, 26, 32);
+    border: 1px solid #CCC;
+    color: white;
+    font-weight: bold;
+}
+td a{
+    margin-right:5px ;
+    color: white;
+    text-decoration: none;
+}
+.view{
+    background-color: red;
+    cursor: default;
+    padding: 8px;
+    font-weight: bold;
+}
+.delete{
+    background-color: blue;
+    cursor: default;
+    padding: 8px;
+    font-weight: bold;
+}
+img{
+    width: 100px;
+    height: 70px;
+    border: 10px solid white;
+}

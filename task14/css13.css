@@ -1,0 +1,264 @@
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 15% 1fr;
+  gap: 20px 20px;
+}
+.grid div{
+    background-color: rgb(11, 105, 105);
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.layout{
+    background-color: rgb(20, 17, 20);
+    color:white;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    height: 700px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "header header header header header header header header header header"
+                         " sec sec sec  sec sec sec sec sec  aside aside"
+                         "foot foot foot foot foot foot foot foot foot foot";
+}
+.layout header{
+    background-color: rgb(99, 99, 219);
+    grid-area:header;
+}
+.layout header::before{
+    content: "header";
+}
+.layout section{
+    background-color: rgba(204, 102, 33, 0.849);
+    grid-area: sec;
+}
+.layout section::before{
+    content: "section";
+}
+.layout  aside{
+    background-color: rgb(10, 88, 88);
+    grid-area: aside;
+}
+.layout aside::before{
+    content: "aside";
+}
+.layout footer{
+    background-color: rgb(4, 95, 53);
+    grid-area: foot;
+}
+.layout footer::before{
+    content: "footer";
+}
+.grid2{
+  background-color: rgb(206, 203, 203);
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto repeat(2 , 1fr) auto;
+  grid-template-rows: auto  5%;
+  gap: 10px;
+}
+.grid2 div{
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid3{
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(8,1fr) ;
+  grid-template-rows: repeat(6,1fr);
+  grid-template-areas: "eight eight eight eight eight eight eight eight" 
+              "two two two two two three three three"
+              "four four four  five five five five five"
+              "six six six five five five five five"
+              "seven  seven seven five five five five five"
+              "one one one one one one one one " ;
+  gap: 10px 10px;
+}
+.grid3 div{
+    background-color: rgb(18, 99, 250);
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.grid3 .one{
+    grid-area: one;
+   
+}
+.grid3 .two{
+    grid-area:two ;
+  
+}
+.grid3 .three{
+    grid-area: three;
+   
+}
+.grid3 .four{
+    grid-area:four ;
+  
+}
+.grid3 .five{
+    grid-area: five;
+ 
+}
+.grid3 .six{
+    grid-area: six;
+}
+.grid3 .seven{
+    grid-area: seven;
+}
+.grid3 .eight{
+    grid-area: eight;
+
+}
+
+.grid4 {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(2,1fr) ;
+  grid-template-rows: repeat(2,10%);
+  gap: 20px;
+  justify-content: space-between;
+  align-content: space-between;
+  
+}
+.grid4 div{
+    background-color: rgb(71, 89, 255);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.content{
+ background-color:#ddd;
+ box-sizing: border-box;
+}
+.grid5{
+  background-color: #ddd;
+  padding: 20px;
+  height: 1350px;
+  margin: 10px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:  1.6fr repeat(2,26.5%) 1.3fr;
+  gap: 10px;
+  grid-template-areas: " member1 member1 member2 member3"
+                       " member4 member5 member5 member3"
+                       " member4 member6 member6 member3"
+                       " member7 member8 member9 member10";
+}
+.grid5 div{
+    border-bottom:2px solid red ;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+.grid5 div::after {
+  content: "''";
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 3.5em;
+  position: absolute;
+  bottom: -30px;
+  right: 15px;
+  letter-spacing: -2px;
+  transform: rotate(12deg);
+  opacity: 35%;
+}
+.member1{
+grid-area: member1;
+ background-color:white ;
+  color: black;
+grid-area: 1 / 1 / 2 / 3;
+}
+.member2{
+ grid-area: member2;
+ background-color:white ;
+  color: black;
+} 
+.member3{
+    grid-area: member3;
+    background-color: black;
+    color: white;
+    grid-area: 1 / 4 / 4 / 5;
+}
+.member4{
+grid-area: member4;
+ background-color:white ;
+  color: black;
+  grid-area: 2 / 1 / 4 / 2;
+} 
+.member5{
+    grid-area: member5;
+    background-color: black;
+     color: white;
+     grid-area: 2 / 2 / 3 / 4;
+} 
+.member6{
+grid-area: member6;
+ background-color:white ;
+  color: black;
+  grid-area: 3 / 2 / 4 / 4;
+}
+.member7{
+grid-area: member7;
+ background-color:white ;
+  color: black;
+} 
+.member8{
+    grid-area: member8;
+    background-color: black;
+    color: white;
+}
+.member9{
+grid-area: member9;
+ background-color:white ;
+  color: black;
+} 
+.member10{
+ grid-area: member10;
+ background-color:white ;
+ color: black;
+}
+h4{
+    margin: 0;
+}
+h5 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    opacity: 50%;
+}
+p{
+ margin-top: 20px;
+}

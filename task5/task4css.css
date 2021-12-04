@@ -1,0 +1,29 @@
+div,p{
+    text-align: center;
+}
+.quiz1{
+   text-shadow: 0.5px 0.5px 0 red, 1px 1px 0 blue, 1.5px 1.5px 0 rgb(156 9 156);
+   text-transform: capitalize;
+   letter-spacing: 2px;
+}
+.one{
+    text-transform: uppercase;
+}
+.two{
+    text-transform: capitalize;
+}
+.three{
+    text-transform: lowercase;
+}
+.quiz2{
+    background-color: rgb(204, 198, 197);
+    padding: 10px;
+    margin: 5px;
+    width: 400px;
+}
+
+.case3{
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}

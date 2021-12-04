@@ -1,0 +1,18 @@
+.parent .child .title{
+    color: red;
+}
+.parent .title{
+    color: blue;
+}
+div p,div.title{
+    color: green;
+}
+.first,.second,.third,.forth{
+    margin: 5px;
+    padding: 5px;
+    background-color: red;
+    max-width: 400px;
+    max-height: 40px;
+    width: fit-content;
+    overflow: hidden;
+}

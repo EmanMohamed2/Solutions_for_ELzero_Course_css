@@ -1,0 +1,46 @@
+
+.parent{
+    width: 1000px;
+    background-color: #80f085;
+    /*border: 2px solid blue;*/
+    height:270px;
+}
+.one,.two,.three,.four{
+    margin: 15px 0px 0px 15px ;
+    padding:15px 0px ;
+    float: left;
+    background-color: #a7a9ac;
+    text-align: center;
+    border: inherit;
+}
+.one{
+    width: calc(100% - 30px);
+}
+.two{
+    width: calc((100% - 60px) /3);
+}
+.three{
+    width: calc((100% - 45px) /2);
+}
+.four{
+    width: calc((100% - 75px) /4);
+    margin-bottom: 15px;
+}
+
+
+.normal,.one11,.two11{
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: rgb(141, 138, 138); /* Get The Background From Image */
+  color: black;
+  
+}
+.one11{
+    background-color: rgb(141 138 138 /0.1);
+}
+.two11{
+     opacity: 0.2;
+}

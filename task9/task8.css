@@ -1,0 +1,210 @@
+.div1{
+    width: 300px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: rgb(206, 202, 206);
+    text-align: center;
+    line-height: 60px;
+}
+div:empty{
+    background-color: red;
+}
+.div2::before{
+    content: "1";
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    left: -15px;
+    top:15px
+}
+.div2{
+    margin:  30px auto;
+    background-color: rgb(206, 202, 206);
+    text-align: center;
+    line-height: 60px;
+    width: 300px;
+    padding: 10px;
+    height: 60px;
+    float: center;
+    position: relative;
+}
+.divp{
+    position: relative;
+    margin :50px auto ;
+    height: 50px;
+   
+}
+.div3{
+    background-color: rgb(215, 221, 219);
+    padding: 10px;
+    margin-left: 40px;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    position: relative;
+}
+.user{
+    background-color: rgb(215, 221, 219);
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    margin:5px 5px 0 0;
+    font-size: 20px;
+    text-align: center;
+}
+.div3::before{
+    content: " ";
+    width: 5px;
+    height: 70px;
+    background-color: palevioletred;
+    position: absolute;
+    left:-5.5px;
+    top: 0;
+}
+.div3::after{
+    content: " ";
+    position: absolute;
+    left:-35px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 15px;
+    border-color: transparent palevioletred transparent transparent;
+}
+/*
+p{
+    background-color: palevioletred;
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px auto; 
+}
+p::after{
+    content: "";
+    background-color: purple;
+    width: 10px;
+    height: 50px;
+    padding: 10px;
+ 
+    position: absolute;
+    left: 90px;
+    top: 0;
+}*/
+.op1::before{
+    content: "1";
+    background-color: red;
+    color: white;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: -80px;
+    top:0px
+}
+.op2::before{
+    content: "2";
+    background-color: red;
+    color: white;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: -80px;
+    top:0px
+}
+.op3::before{
+    content: "3";
+    background-color: red;
+    color: white;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: -80px;
+    top:0px
+}
+.op4::before{
+    content: "4";
+    background-color: red;
+    color: white;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: -80px;
+    top:0px
+}
+.op5::before{
+    content: "5";
+    background-color: red;
+    color: white;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: -80px;
+    top:0px
+}
+.op6::before{
+    content: "6";
+    background-color: red;
+    color: white;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: -80px;
+    top:0px
+}
+p{
+    margin:  30px auto;
+    background-color: rgb(206, 202, 206);
+    line-height: 60px;
+    width: 300px;
+    padding: 10px;
+    height: 60px;
+    float: center;
+    position: relative;
+}
+p::after{
+    content: "";
+    background-color: red;
+    width: 5px;
+    height:80px ;
+    position: absolute;
+    top:0;
+    right: -5px;
+}

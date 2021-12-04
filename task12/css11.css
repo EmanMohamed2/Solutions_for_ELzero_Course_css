@@ -1,0 +1,231 @@
+
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.task1{
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    margin-top: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: -9px 0px 0 0px blue, 9px 0 0 0 red;
+    align-items: center;
+    background-color: rgb(187, 183, 183);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.parent2{
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    background-color: rgb(207, 207, 204);
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+.parent2 div{
+    width: calc(96% /3);
+    padding: 20px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+.parent3{
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(207, 207, 204);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.parent3 div{
+   
+    background-color: rgb(83, 85, 204);
+    color: white;
+    width: calc(94% / 3 );
+    height: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent3  .one{
+    order: 6;
+    height: 40px;
+    align-self: flex-end;
+}
+.parent3 .two{
+    order: 5;
+    
+}
+.parent3 .three{
+    order:2;
+    height: 40px;
+}
+.parent3  .four{
+    order:3;
+      
+}
+ .parent3  .five{
+    order:4;
+     
+}
+.parent3 .six{
+    order:1;
+}
+
+.parent4{
+    background-color: rgb(207, 207, 204);
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.parent4 div{
+    background-color: rgb(71, 136, 6);
+    color: white;
+    width: 5%;
+    height: calc(90% / 3);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.parent4 .two{
+    width: 50%;
+    align-self: flex-start;
+}
+.parent5{
+    background-color: rgb(207, 207, 204);
+    width: 600px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.parent5 div{
+    width: calc(80% / 4);
+    height: calc(100% / 2);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent5 .one{ 
+    order: 2;
+    background-color: orange;
+}
+.parent5 .two{ 
+    align-self: flex-end;
+    order: 3;
+    background-color: green;
+}
+.parent5 .three{ 
+     order: 4;
+    background-color: brown;
+}
+.parent5 .four{ 
+    align-self: flex-end;
+    order: 1;
+    background-color: rgb(151, 15, 151);
+}
+:root{
+    --maincolor:rgb(238, 236, 236);
+    --localcolor:rgb(190, 188, 188);
+    --mainpadding:10px;
+    --alignitem:center;
+}
+.page{
+    width: 100% ;
+    background-color: var( --maincolor);
+    padding: var(--mainpadding);
+    height: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo{
+    background-color: var(--localcolor);
+    width: calc(99% / 9);
+    display: flex;
+    padding: var(--mainpadding);
+    justify-content: var(--alignitem);
+    align-items: var(--alignitem);
+}
+.links{
+    background-color:  var(--localcolor);
+    margin-top: 0;
+    height: 100%;
+    width: calc((99% / 9)*8);
+    list-style: none;
+    justify-content: flex-end;
+    align-items: var(--alignitem);
+    display: flex;
+}
+.links li{
+    padding-right:calc(var(--mainpadding)+20px);
+}
+.main-area{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-area .content{
+    background-color:  var(--localcolor);
+    width: calc((99% / 3)*2);
+    height: 100%;
+    padding:var(--mainpadding);
+   
+}
+.main-area .sidebar{
+    background-color:  var(--localcolor);
+    width: calc(99% / 3);
+    height: 100%;
+    padding: var(--mainpadding);
+  
+}
+.footer{
+    background-color:  var(--localcolor);
+    padding: var(--mainpadding);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: var(--alignitem); 
+}
+.copyright{
+    width: 75%;
+}
+.footer .design{
+    width: 25%;
+    display: flex;
+    justify-content:flex-end;
+}
